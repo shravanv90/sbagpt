@@ -61,7 +61,7 @@ def main():
     if openai_key:
         query = st.text_input("Ask questions about Sinequa SBA:")
         if query:
-            docs = VectorStore.similarity_search(query=query, k=3, distances="True", labels="True")
+            docs = VectorStore.similarity_search(query=query, k=3,fetch_k=20)
             llm = OpenAI(temperature=0.5, max_tokens = 1000, verbose="true", openai_api_key=openai_key)
             chain = load_qa_chain(llm=llm, chain_type="stuff")
             with get_openai_callback() as cb:
