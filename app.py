@@ -32,7 +32,7 @@ def main():
     if openai_api_key:
         VectorStore = None
         try:
-            with open("sinequa_sba_documentation.pkl", "rb") as f:
+            with open("./sinequa_sba_documentation.pkl", "rb") as f:
                 VectorStore = pickle.load(f)
         except Exception as e:
             st.error(f"An error occurred while initializing the assistant. Please make sure the documentation embeddings are available.")
@@ -44,15 +44,15 @@ def main():
             if query:
                 try:
                     docs = VectorStore.similarity_search(query=query, k=3)
-                    llm = OpenAI(temperature=0.7, max_tokens=100, verbose="true", openai_api_key=openai_api_key)
+                    llm = OpenAI(temperature=0.7, max_tokens=300, verbose="true", openai_api_key=openai_api_key)
                     chain = load_qa_chain(llm=llm, chain_type="stuff")
                     with get_openai_callback() as cb:
                         response = chain.run(input_documents=docs, question=query)
 
                     if response is not None:
-                        if "```typescript" in response or "```cs" in response or "```html" in response:
+                        if "`typescript" in response or "`cs" in response or "```html" in response:
                             # Add syntax highlighting to the code.
-                            formatted_response = f"```typescript\n{response}\n```"
+                            formatted_response = f"`typescript\n{response}\n`"
                             st.markdown(formatted_response, unsafe_allow_html=True)
                         else:
                             # Generate a light grey box using HTML and CSS.
