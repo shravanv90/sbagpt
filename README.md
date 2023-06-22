@@ -2,7 +2,7 @@
 
 Sinequa AI Assistant is a chatbot application capable of answering your questions about Sinequa SBA. It uses the latest language models from OpenAI and presents a user-friendly interface thanks to Streamlit.
 
-![Sinequa SBA AI Assistant](screenshot.png)
+![Sinequa AI Assistant](assets/Screenshot.png)
 
 ## Getting Started
 
@@ -18,18 +18,16 @@ Follow these steps to run Sinequa SBA AI Assistant on your local machine.
 ### Installation
 
 1. Clone the repository:
--git clone https://github.com/your-username/sinequa-sba-ai-assistant.git
--cd sinequa-sba-ai-assistant
- 
-2. Install Python dependencies:
--pip install -r requirements.txt
+   -git clone https://github.com/your-username/sinequa-sba-ai-assistant.git
+   -cd sinequa-sba-ai-assistant
 
+2. Install Python dependencies:
+   -pip install -r requirements.txt
 
 3. Get your OpenAI API key from the [OpenAI website](https://www.openai.com/). You'll need to create an account and follow their instructions to generate an API key.
 
 4. Run the application:
--streamlit run app.py
-
+   -streamlit run app.py
 
 5. The Streamlit app should now be running on your local machine. You'll see an URL in your terminal (usually `http://localhost:8501`), open that URL in your browser to use the application.
 
@@ -42,9 +40,3 @@ Enter your query into the text box and press enter. The AI Assistant will then u
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-
-
-
-
-

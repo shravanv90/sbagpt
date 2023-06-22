@@ -12,7 +12,6 @@ import glob
 
 # Sidebar contents
 with st.sidebar:
-    st.title('Chat with Sinequa SBA')
     st.markdown('''
     ## About
     This app is an AI-driven assistant, capable of answering your questions about Sinequa SBA and sinequa platform.
