@@ -1,8 +1,8 @@
 # Sinequa AI Assistant
 
-Sinequa AI Assistant is a chatbot application capable of answering your questions about Sinequa SBA. It uses the latest language models from OpenAI and presents a user-friendly interface thanks to Streamlit.
+Sinequa AI Assistant is a chatbot application capable of answering your questions about Sinequa SBA. This is just to help sinequa and SBA developers find quick solutions and answers. It uses the latest language models from OpenAI and presents a user-friendly interface thanks to Streamlit.
 
-## NOTE: This is a simple example of a LLM implementation QnA chatbot using Open AI models. As you know LLM models also tend to halucinate and provide incorrect answers. Basic knowledge of sinequa and SBA is still needed to perform tasks. But this can be a quick helper. Please use it at your own descretion.
+### NOTE: This is a simple example of a LLM implementation QnA chatbot using Open AI models. As you know LLM models also tend to hallucinate and provide incorrect answers. Basic knowledge of sinequa and SBA is still needed to perform tasks. But this can be a quick helper. Please use it at your own descretion.
 
 ![Sinequa AI Assistant](assets/Screenshot.png)
 

@@ -15,7 +15,7 @@ with st.sidebar:
     st.markdown('''
     ## About
     This app is an AI-driven assistant, capable of answering your questions about Sinequa SBA and sinequa platform.
-    It utilizes the latest language models from OpenAI and presents a user-friendly interface thanks to Streamlit.
+    It can be used by sinequa and SBA developers. It utilizes the latest language models from OpenAI and presents a user-friendly interface thanks to Streamlit.
     Feel free to start a conversation with it!
     ''')
     st.write('[Sinequa SBA Documentation](https://sinequa.github.io/sba-angular/)')
