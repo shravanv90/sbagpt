@@ -53,7 +53,7 @@ def main():
                         if "`typescript" in response or "`cs" in response or "```html" in response:
                             # Add syntax highlighting to the code.
                             formatted_response = f"`typescript\n{response}\n`"
-                            st.markdown(formatted_response, unsafe_allow_html=True)
+                            st.markdown(formatted_resposne, unsafe_allow_html=True)
                         else:
                             # Generate a light grey box using HTML and CSS.
                             box_style = """
@@ -69,7 +69,7 @@ def main():
                             """
                             st.markdown(f"{box_style}<div class='box'>{response}</div>", unsafe_allow_html=True)
                 except Exception as e:
-                    st.error(f"An error occurred while processing your question. Please try again. {str(e.with_traceback)}")
+                    st.error(f"An error occurred while processing your question. Please try again. {e}")
                     return
 
 if __name__ == '__main__':
