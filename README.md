@@ -20,7 +20,7 @@ Follow these steps to run Sinequa SBA AI Assistant on your local machine.
 ### Installation
 
 1. Clone the repository:
-   -git clone https://github.com/your-username/sinequa-sba-ai-assistant.git
+   -git clone https://github.com/shravanv90/sbagpt.git
    -cd sinequa-sba-ai-assistant
 
 2. Install Python dependencies:
