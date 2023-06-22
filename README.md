@@ -25,12 +25,14 @@ Follow these steps to run Sinequa SBA AI Assistant on your local machine.
    - cd sbagpt
 
 2. Install Python dependencies:
-   -pip install -r requirements.txt
+
+   - pip install -r requirements.txt
 
 3. Get your OpenAI API key from the [OpenAI website](https://www.openai.com/). You'll need to create an account and follow their instructions to generate an API key.
 
 4. Run the application:
-   -streamlit run app.py
+
+   - streamlit run app.py
 
 5. The Streamlit app should now be running on your local machine. You'll see an URL in your terminal (usually `http://localhost:8501`), open that URL in your browser to use the application.
 
