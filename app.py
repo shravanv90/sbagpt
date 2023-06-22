@@ -69,7 +69,7 @@ def main():
                             """
                             st.markdown(f"{box_style}<div class='box'>{response}</div>", unsafe_allow_html=True)
                 except Exception as e:
-                    st.error(f"An error occurred while processing your question. Please try again.")
+                    st.error(f"An error occurred while processing your question. Please try again. {str(e.__cause__)}")
                     return
 
 if __name__ == '__main__':
