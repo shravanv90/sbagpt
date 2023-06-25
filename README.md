@@ -4,7 +4,22 @@ Sinequa AI Assistant is a chatbot application capable of answering your question
 
 ### NOTE: This is a simple example of a LLM implementation QnA chatbot using Open AI models. As you know LLM models also tend to hallucinate and provide incorrect answers. Basic knowledge of sinequa and SBA is still needed to perform tasks. But this can be a quick helper. Please use it at your own discretion.
 
-![Sinequa AI Assistant](assets/Screenshot.png)
+## Features:
+
+- ### Platform Debug:
+
+  ![Sinequa AI Assistant](assets/Screenshot.png)
+
+- ### Basic SQL Statements
+
+  ![Sinequa AI Assistant](assets/sql_select.png)
+
+- ### SBA relatd queries
+
+  ![Sinequa AI Assistant](assets/sba.png)
+
+- ### Plugin related queries
+  ![Sinequa AI Assistant](assets/plugin.png)
 
 ## Getting Started
 
